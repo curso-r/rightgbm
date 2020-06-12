@@ -23,7 +23,6 @@ Imports:
     methods,
     data.table,
     httr,
-    jsonlite,
-    magrittr
+    jsonlite
 Suggests: 
     testthat
