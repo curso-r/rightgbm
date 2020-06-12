@@ -8,7 +8,7 @@ get_url <- function(platform) {
     re <- sprintf("ubuntu-[0-9]{2}\\.[0-9]{2}-r-%d\\.%d", getRversion()$major, getRversion()$minor)
   } else if (platform == "Windows") {
     re <- sprintf("windows-r-%d\\.%d", getRversion()$major, getRversion()$minor)
-  } else if (platform == "MacOS") {
+  } else if (platform == "Darwin") {
     re <- sprintf("macos-r-%d\\.%d", getRversion()$major, getRversion()$minor)
   }
   r <- httr::GET("https://api.github.com/repos/curso-r/lightgbm-build/releases")
@@ -45,6 +45,8 @@ install_lightgbm <- function(...) {
     utils::install.packages(get_url(platform), repos = NULL, type = "win.binary", ...)
   } else if (platform == "Darwin") {
     utils::install.packages(get_url(platform), repos = NULL, ...)
+  } else {
+    stop ("Not implemented yet.")
   }
 }
 
