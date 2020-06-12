@@ -1,6 +1,6 @@
 Package: rightgbm
 Title: Installation of 'LightGBM' Done Right
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: c(
     person(given = "Julio", family = "Trecenti", role = c("cre"), email = "jtrecenti@curso-r.com", comment = c(ORCID = "0000-0002-1680-6389")),
     person(given = "Athos", family = "Damani", role = c("aut"), email = "adamiani@curso-r.com"),
