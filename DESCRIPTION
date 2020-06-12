@@ -1,13 +1,13 @@
 Package: rightgbm
-Title: Installation of LightGBM Done Right
+Title: Installation of 'LightGBM' Done Right
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Authors@R: c(
+    person(given = "Julio", family = "Trecenti", role = c("cre"), email = "jtrecenti@curso-r.com", comment = c(ORCID = "0000-0002-1680-6389")),
+    person(given = "Athos", family = "Damani", role = c("aut"), email = "adamiani@curso-r.com"),
+    person(given = "William", family = "Amorim", role = c("aut"), email = "wamorim@curso-r.com"),
+    person(given = "Daniel", family = "Falbel", role = c("aut"), email = "dfalbel@rstudio.com"))
+Description: Install 'lightgbm' <https://lightgbm.readthedocs.io/en/latest/R/> 
+  package by 'Microsoft'.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -16,4 +16,10 @@ RoxygenNote: 7.1.0
 URL: https://github.com/jtrecenti/rightgbm
 BugReports: https://github.com/jtrecenti/rightgbm/issues
 Imports: 
-    utils
+    utils,
+    Matrix,
+    graphics,
+    methods,
+    jsonlite
+Suggests: 
+    testthat

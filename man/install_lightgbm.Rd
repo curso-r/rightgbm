@@ -3,12 +3,18 @@
 \name{install_lightgbm}
 \alias{install_lightgbm}
 \title{Installs LightGBM}
+\source{
+\href{https://lightgbm.readthedocs.io/en/latest/R/index.html}{Source code from LightGBM}
+}
 \usage{
 install_lightgbm(...)
 }
 \arguments{
-\item{...}{additional parameters passed to \code{\link[utils:install.packages]{utils::install.packages()}}}
+\item{...}{additional parameters passed to \code{\link[utils:install.packages]{utils::install.packages()}}.}
 }
 \description{
-Installs LightGBM
+This function installs \code{lightgbm} package directly from daily builds
+available on \href{https://github.com/curso-r/lightgbm-build}{this repository}.
+It works on Windows, Debian-based Linux distros and MacOS. Unfortunately
+it does not work yet on CentOS and ArchLinux.
 }
