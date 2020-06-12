@@ -12,6 +12,9 @@ install_lightgbm(...)
 \arguments{
 \item{...}{additional parameters passed to \code{\link[utils:install.packages]{utils::install.packages()}}.}
 }
+\value{
+invisible \code{NULL}.
+}
 \description{
 This function installs \code{lightgbm} package directly from daily builds
 available on \href{https://github.com/curso-r/lightgbm-build}{this repository}.

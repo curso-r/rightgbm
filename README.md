@@ -1,24 +1,19 @@
 # rightgbm
 
-<!-- badges: start -->
-<!-- badges: end -->
-
-The goal of `rightgbm` is to install [LightGBM from Microsoft]() without pain.
+The goal of `rightgbm` is to install [LightGBM from Microsoft](https://lightgbm.readthedocs.io/en/latest/R/) without pain.
 
 ## Installation
-
-You can install the released version of rightgbm from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
 devtools::install_github("curso-r/rightgbm")
 ```
 
-## Example
+<!-- You can install the released version of rightgbm from [CRAN](https://CRAN.R-project.org) with:-->
 
-This is a basic example which shows you how to solve a common problem:
+## Example
 
 ``` r
 library(rightgbm)
-## basic example code
+install_lightgbm()
 ```
 
