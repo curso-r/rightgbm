@@ -19,10 +19,6 @@ get_url <- function(platform) {
   da$assets[[1]]$browser_download_url
 }
 
-check_macos_deps <- function() {
-  TRUE
-}
-
 #' Installs LightGBM
 #'
 #' This function installs `lightgbm` package directly from daily builds
@@ -47,9 +43,7 @@ install_lightgbm <- function(...) {
     }
   } else if (platform == "Windows") {
     utils::install.packages(get_url(platform), repos = NULL, type = "win.binary", ...)
-  } else if (platform == "MacOS") {
-    ## CHECAR
-    check_macos_deps()
+  } else if (platform == "Darwin") {
     utils::install.packages(get_url(platform), repos = NULL, ...)
   }
 }
