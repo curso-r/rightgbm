@@ -15,8 +15,8 @@ get_url <- function(platform) {
   if (r$status_code != 200) stop ("Could not access latest builds.")
   json <- httr::content(r, simplifyDataFrame = TRUE)
   da <- json[grepl(re, json$tag_name),]
-  da <- da[order(da$created_at, decreasing = TRUE), ]
-  da$assets[[1]]$browser_download_url
+  da <- da[order(da$created_at, decreasing = TRUE), "assets"][[1]]
+  sort(da$browser_download_url, decreasing = TRUE)[1]
 }
 
 #' Installs LightGBM
