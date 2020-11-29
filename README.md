@@ -1,3 +1,5 @@
+## This package is now deprecated because fortunately lightgbm is now on CRAN!
+
 # rightgbm
 
 The goal of `rightgbm` is to install [LightGBM from Microsoft](https://lightgbm.readthedocs.io/en/latest/R/) without pain.
